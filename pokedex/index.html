@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+        <title>Steven's Pokedex</title>
+        <meta name="description" content="Pokedex of the first twenty pokemon">
+        <meta name="author" content="Steven">
+        <link rel="stylesheet" href="style.css">
+        <script src="pokedex.js"></script>
+    </head>
+    <body>
+        <div id="welcomecontainer">
+            <h1>Welcome to the Pokedex!</h1>
+        </div>
+        <div id="searchcontainer">
+            <form class="searchnum">
+                <input type="number" id="textfieldnum" placeholder="Enter Number" onkeyup="findByNum()">
+            </form>
+            <form class="searchchar">
+                <input type="text" placeholder="Enter Character" id="textfieldchar" onkeyup="findByChar()">
+            </form>
+        </div>
+        <div id="dynamicsearch">
+            <div id="dynamicsearchcontainer">
+                <h1>Search Results</h1>
+                <ul id="dynamicsearchlist">
+                </ul>
+            </div>
+        </div>
+        <div id="pokemoncontainer">
+            <ul>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/1.png" alt="Bulbasaur">
+                    </div>
+                    <p>#1</p>
+                    <h2>Bulbasaur</h2>
+                    <h3>ATK: 118 DEF: 118</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Grass">
+                                <p>Grass</p>
+                            </div>
+                        </div>
+                        <div class="typecontainer">
+                            <div class="Poison">
+                                <p>Poison</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/2.png" alt="Ivysaur">
+                    </div>
+                    <p>#2</p>
+                    <h2>Ivysaur</h2>
+                    <h3>ATK: 151 DEF: 151</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Grass">
+                                <p>Grass</p>
+                            </div>
+                        </div>
+                        <div class="typecontainer">
+                            <div class="Poison">
+                                <p>Poison</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/3.png" alt="Venasaur">
+                    </div>
+                    <p>#3</p>
+                    <h2>Venasaur</h2>
+                    <h3>ATK: 198 DEF: 198</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Grass">
+                                <p>Grass</p>
+                            </div>
+                        </div>
+                        <div class="typecontainer">
+                            <div class="Poison">
+                                <p>Poison</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/4.png" alt="Charmander">
+                    </div>
+                    <p>#4</p>
+                    <h2>Charmander</h2>
+                    <h3>ATK: 116 DEF: 96</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Fire">
+                                <p>Fire</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/5.png" alt="Charmeleon">
+                    </div>
+                    <p>#5</p>
+                    <h2>Charmeleon</h2>
+                    <h3>ATK: 158 DEF: 128</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Fire">
+                                <p>Fire</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/6.png" alt="Charizard">
+                    </div>
+                    <p>#6</p>
+                    <h2>Charizard</h2>
+                    <h3>ATK: 223 DEF: 176</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Fire">
+                                <p>Fire</p>
+                            </div>
+                        </div>
+                        <div class="typecontainer">
+                            <div class="Flying">
+                                <p>Flying</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/7.png" alt="Squirtle">
+                    </div>
+                    <p>#7</p>
+                    <h2>Squirtle</h2>
+                    <h3>ATK: 94 DEF: 122</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Water">
+                                <p>Water</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/8.png" alt="Wartortle">
+                    </div>
+                    <p>#8</p>
+                    <h2>Wartortle</h2>
+                    <h3>ATK: 126 DEF: 155</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Water">
+                                <p>Water</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/9.png" alt="Blastoise">
+                    </div>
+                    <p>#9</p>
+                    <h2>Blastoise</h2>
+                    <h3>ATK: 171 DEF: 210</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Water">
+                                <p>Water</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/10.png" alt="Caterpie">
+                    </div>
+                    <p>#10</p>
+                    <h2>Caterpie</h2>
+                    <h3>ATK: 55 DEF: 62</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Bug">
+                                <p>Bug</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/11.png" alt="Metapod">
+                    </div>
+                    <p>#11</p>
+                    <h2>Metapod</h2>
+                    <h3>ATK: 45 DEF: 94</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Bug">
+                                <p>Bug</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/12.png" alt="Butterfree">
+                    </div>
+                    <p>#12</p>
+                    <h2>Butterfree</h2>
+                    <h3>ATK: 167 DEF: 151</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Bug">
+                                <p>Bug</p>
+                            </div>
+                        </div>
+                        <div class="typecontainer">
+                            <div class="Flying">
+                                <p>Flying</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/13.png" alt="Weedle">
+                    </div>
+                    <p>#13</p>
+                    <h2>Weedle</h2>
+                    <h3>ATK: 63 DEF: 55</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Bug">
+                                <p>Bug</p>
+                            </div>
+                        </div>
+                        <div class="typecontainer">
+                            <div class="Poison">
+                                <p>Poison</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/14.png" alt="Kakuna">
+                    </div>
+                    <p>#14</p>
+                    <h2>Kakuna</h2>
+                    <h3>ATK: 46 DEF: 86</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Bug">
+                                <p>Bug</p>
+                            </div>
+                        </div>
+                        <div class="typecontainer">
+                            <div class="Poison">
+                                <p>Poison</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/15.png" alt="Beedrill">
+                    </div>
+                    <p>#15</p>
+                    <h2>Beedrill</h2>
+                    <h3>ATK: 169 DEF: 150</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Bug">
+                                <p>Bug</p>
+                            </div>
+                        </div>
+                        <div class="typecontainer">
+                            <div class="Poison">
+                                <p>Poison</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/16.png" alt="Pidgey">
+                    </div>
+                    <p>#16</p>
+                    <h2>Pidgey</h2>
+                    <h3>ATK: 85 DEF: 76</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Normal">
+                                <p>Normal</p>
+                            </div>
+                        </div>
+                        <div class="typecontainer">
+                            <div class="Flying">
+                                <p>Flying</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/17.png" alt="Pidgeotto">
+                    </div>
+                    <p>#17</p>
+                    <h2>Pidgeotto</h2>
+                    <h3>ATK: 117 DEF: 108</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Normal">
+                                <p>Normal</p>
+                            </div>
+                        </div>
+                        <div class="typecontainer">
+                            <div class="Flying">
+                                <p>Flying</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/18.png" alt="Pidgeot">
+                    </div>
+                    <p>#18</p>
+                    <h2>Pidgeot</h2>
+                    <h3>ATK: 166 DEF: 157</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Normal">
+                                <p>Normal</p>
+                            </div>
+                        </div>
+                        <div class="typecontainer">
+                            <div class="Flying">
+                                <p>Flying</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/19.png" alt="Rattata">
+                    </div>
+                    <p>#19</p>
+                    <h2>Rattata</h2>
+                    <h3>ATK: 103 DEF: 70</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Normal">
+                                <p>Normal</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="border">
+                        <img src = "pokemon/20.png" alt="Raticate">
+                    </div>
+                    <p>#20</p>
+                    <h2>Raticate</h2>
+                    <h3>ATK: 161 DEF: 144</h3>
+                    <div class ="type">
+                        <div class="typecontainer">
+                            <div class="Normal">
+                                <p>Normal</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="references">
+            References:
+            <a href= "https://www.kaggle.com/kvpratama/pokemon-images-dataset">Pokemon images dataset</a>
+            <a href= "https://www.reddit.com/r/TheSilphRoad/comments/7p952h/pokemon_go_pokedex_spreadsheet/">Pokemon descriptions</a>
+        </div>
+    </body>
+</html>

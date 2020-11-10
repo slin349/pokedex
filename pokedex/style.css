@@ -1,0 +1,178 @@
+body {
+    background-color:#41B3A3;
+    position: relative;
+    min-height: 100%;
+}
+
+h1 {
+    height: 100px;
+    text-align: center;
+    font: 60px/60px "Impact";
+}
+
+h3 {
+    padding-left: 5%;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+    padding-left: 15%;
+    padding-right: 10%;
+}
+
+li {
+    height: 400px;
+    width: 300px;
+    border-radius: 25px;
+    margin: 10px;
+    float: left;
+    padding: 10px;
+    border: 5px solid #E27D60;
+    background-color: #E8A87C;
+}
+
+ul img {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.border {
+    height: 150px;
+    width: 300px;
+    border-radius: 25px;
+    background-color: #C38D9E;
+}
+
+ul p {
+    padding-left: 5%;
+}
+
+h2 {
+    padding-left: 5%;
+    font-size: 35px;
+}
+
+.type {
+    padding-left: 5%;
+    background-color: grey;
+}
+
+.typecontainer {
+    float: left;
+    padding: 2px;
+}
+
+.Grass {
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    background-color: green;
+    color: black;
+}
+
+.Poison {
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    background-color: purple;
+    color: white;
+}
+
+.Fire {
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.Flying {
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    background-color: lightgrey;
+    color: black;
+}
+
+.Water {
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+.Bug {
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    background-color: lightgreen;
+    color: black;
+}
+
+.Normal {
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+
+.references {
+    text-align: center;
+}
+
+#searchcontainer {
+    width: 50%;
+    height: 50px;
+    padding: 25px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #5D5C61;
+}
+
+.searchnum {
+    float: left;
+}
+
+.searchchar {
+    float: right;
+}
+
+#dynamicsearch{
+    display: none;
+}
+
+#dynamicsearchcontainer {
+    background-color: grey;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+#dynamicsearchlist {
+    list-style: none;
+    overflow: hidden;
+    padding-left: 15%;
+    padding-right: 10%;
+}
+
+input{
+    width: 200px;
+    background-color: lightgrey;
+    color: black;
+    padding: 20px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #welcomecontainer {
+      background-color: #E27D60;
+      color: #8EE4AF;
+      margin: auto;
+      padding-top: 5px;
+      border-radius: 10px;
+  }
